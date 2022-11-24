@@ -1406,6 +1406,10 @@ footer {
     color: #fff;
 
 }
+iframe{
+    width: 100%; 
+    height: 300px;
+}
 
 
 section#Features {
