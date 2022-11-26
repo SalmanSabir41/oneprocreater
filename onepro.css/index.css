@@ -450,6 +450,7 @@ ul.social-bookmark {
     justify-content: space-between;
     align-items: center;
     height: 58px
+    
 }
 .social-bookmark li{
     list-style: none;
@@ -1410,6 +1411,50 @@ iframe{
     width: 100%; 
     height: 300px;
 }
+ul#nav a {
+    text-decoration: none;
+}
+ul#nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    
+}
+.stellarnav {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+}
+ul#nav li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 40px 189px 0 20px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    
+}
+.stellarnav.mobile.dark ul {
+    background: rgba(0,0,0,1);
+}
+.stellarnav.mobile>ul {
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+.stellarnav ul li{
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    padding: 10px 0;
+}
+ul#nav li a:hover{
+    color: #007ab9;
+}
+
+
 
 
 section#Features {
@@ -1500,6 +1545,9 @@ section#Features {
     }
     .menu-toggle.full {
         visibility: visible;
+    }
+    .row-top-nav{
+        flex-wrap: wrap;
     }
    
 
